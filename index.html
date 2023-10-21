@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Stopwatch</title>
+</head>
+
+<body>
+    <div class="container">
+        <div id="time">
+            
+            <div class="square">
+                <svg>
+                    <rect x="50" y="50" width="60" height="50"></rect>
+                </svg>
+                <div id="minutes">00</div>
+            </div>
+            <div class="square">
+                <svg>
+                    <rect x="50" y="50" width="60" height="50"></rect>
+                </svg>
+                <div id="seconds">00</div>
+            </div>
+            <div class="square">
+                <svg>
+                    <rect x="50" y="50" width="60" height="50"></rect>
+                </svg>
+                <div id="miliseconds">00</div>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="startTimer">Start</button>
+            <button id="pauseTimer">Pause</button>
+            <button id="resetTime" >Reset</button>
+            <button id="lap" >Lap</button>
+            <button id="resetLap" >Reset Laps</button>
+        </div>
+        
+    </div>
+    <div class="laps-container">
+        <ul class="laps"></ul>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+
+</html>
